@@ -1,0 +1,191 @@
+/* Reset básico para mejorar la consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Estilos del encabezado */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 i {
+    font-size: 32px;
+    color: #6e8efb;
+}
+
+/* Contenedor de entrada de tarea */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del campo de entrada */
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+
+/* Estilos del botón */
+button {
+    padding: 12px 20px;
+    background: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #5a7dca;
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #6e8efb;
+    color: white;
+}
+
+/* Estilo para la barra de búsqueda */
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del contenedor de tareas */
+.tasks-container {
+    list-style: none;
+}
+
+/* Estilos de cada tarea */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.task:hover {
+    background: #e9e9e9;
+}
+
+/* Estilo del texto de la tarea */
+.task span {
+    flex: 1;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Botones de edición y eliminación */
+.task button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Botón de edición */
+.task button.edit {
+    color: #ffc107;
+}
+
+.task button.edit:hover {
+    color: #e0a800;
+}
+
+/* Botón de eliminación */
+.task button.delete {
+    color: #dc3545;
+}
+
+.task button.delete:hover {
+    color: #c82333;
+}
+
+/* Botón de completar */
+.task button.complete {
+    color: #28a745;
+}
+
+.task button.complete:hover {
+    color: #218838;
+}
+
+/* Estilo para las tareas completadas */
+.task.completed span {
+    text-decoration: line-through;
+    color: #6c757d;
+}
