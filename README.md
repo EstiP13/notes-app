@@ -13,12 +13,12 @@ Esta es una simple aplicación de lista de tareas que permite añadir, editar, e
 
 ## Captura de Pantalla
 
-![Captura de pantalla](images/notes-app-screenshot.png)
+![Captura de pantalla](images/demo-notes-app.png)
 
 
 ## Enlace a la Demo
 
-Puedes probar la aplicación en el siguiente enlace: [Demo de Lista de Tareas](https://tu-url-de-demo.com)
+Puedes probar la aplicación en el siguiente enlace: [Demo de Lista de Tareas](https://estip13.github.io/notes-app/)
 
 
 ## Instalación
